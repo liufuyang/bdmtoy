@@ -218,7 +218,7 @@ static bool SaveBufferToFile(int Size)
 static void InstallPointers(Worker *classptr)
 {
     wptr = classptr;
-    core_InstallSendArray(reinterpret_cast<void*>(&usb_SendArr)   );
+    core_InstallSendArray(usb_SendArr);
     core_InstallMessage(  reinterpret_cast<void*>(&MessagePoint)  );
     core_InstallProgress( reinterpret_cast<void*>(&ProgressPoint) );
 }

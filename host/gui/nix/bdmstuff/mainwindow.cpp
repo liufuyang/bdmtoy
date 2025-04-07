@@ -91,7 +91,7 @@ void MainWindow::PushTextMessage(const char *message)
     QTime time = QTime::currentTime();
 
     if (msg.length() > 1)
-        msg = "<" + time.toString() + ":" + QString().sprintf("%03d", time.msec()) + "> " + message;
+        msg = "<" + time.toString() + ":" + QString().asprintf("%03d", time.msec()) + "> " + message;
 
     textmutex.lock();
     ui->textBrowser->append(msg);

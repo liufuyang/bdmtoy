@@ -41,3 +41,5 @@
 
 /host/gui/win/namedll/Debug/*
 /host/gui/win/namedll/Release/*
+
+/host/libusb

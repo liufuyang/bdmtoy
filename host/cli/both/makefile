@@ -1,9 +1,9 @@
-CC=gcc
+CC=clang
 
 APP=debugtool
 
 CFLAGS=-O1 -Wno-unused-function -Wno-unused-variable -pthread
-LDFLAGS=-lusb-1.0 -lpthread
+LDFLAGS=-lusb-1.0 -lpthread -I/opt/homebrew/include -L/opt/homebrew/lib 
 
 ifeq ($(OS),Windows_NT)
 LIBUSBVER=MinGW64

@@ -1,7 +1,7 @@
 
 # I use several gcc toolchains depending on what I do. You should be able to just comment out this and use the default
 # Keep in mind that -O2 us quite agressive and has caused me a lot of trouble with some. You might want to go down to -O1 at the expense of a slightly slower adapter
-GCCPATH="D:/ARM_GCC/6 2017-q2-update/bin/"
+# GCCPATH="D:/ARM_GCC/6 2017-q2-update/bin/"
 BASENAME=arm-none-eabi
 
 CC=$(GCCPATH)$(BASENAME)-gcc

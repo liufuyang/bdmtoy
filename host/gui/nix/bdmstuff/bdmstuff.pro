@@ -82,7 +82,7 @@ FORMS += \
         mainwindow.ui
 
 
-LIBS += -L../../../libusb/libusb/.libs -lusb-1.0
+LIBS += -L../../../libusb/libusb/  -I/opt/homebrew/include -L/opt/homebrew/lib -lusb-1.0
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
